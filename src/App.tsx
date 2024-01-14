@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import react from 'react'
+import Form from './components/Form';
+import Table from './components/Table';
+import Board from './components/Board';
+
+// import { useAppDispatch, useAppSelector } from "./hooks/redux";
+// import { productSlice } from "./store/reducers/ProductSlice";
+// import { fetchData } from './store/reducers/ActionCreators';
 
 function App() {
+
+  // const {count , products} = useAppSelector(state => state.ProductReducer)
+  // const {increment} = productSlice.actions
+  // const dispatch = useAppDispatch()
+  
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form/>
+      <Table/>
+      <Board/>
     </div>
   );
 }
